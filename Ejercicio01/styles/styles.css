@@ -1,0 +1,92 @@
+/*Estilo general de la página*/
+html {
+    color:azure;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilo de las tablas*/
+table {
+/*    width:100%;*/
+    vertical-align: auto;
+    text-align: left;
+}
+
+/*Estilo de las listas*/
+li {
+    list-style-type:circle;
+    list-style-position: inside;
+    text-align: left;
+}
+
+/*textos que sean títulos*/
+.titulo {
+    font-weight: bold;
+    text-align: center;
+}
+
+.label {
+    text-align: center;
+}
+
+/*botones del formulario de envío de incidencias*/
+.lineabotones{
+    text-align: center;
+}
+
+/*Formulario de envío de incidencias*/
+.formulario1 {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/*Línea de salida de resultados de las operaciones y otra información */
+.datos {
+    font-size: 15px;
+    font-weight: bold;
+    color:red;
+}
+
+/*Pie de página*/
+.pie {
+    font-weight: bold;
+    text-align: center;
+    background-color: darkslategrey;
+}
+
+/*Botones de la calculadora*/
+.calc {
+    font-size: larger;
+}
+
+/* Tabla Calculadora*/
+.calculadora {
+    margin:auto;
+    text-align: center;
+    font-size: larger;
+}
+
+/* Para todas las celdas */
+td {
+    padding:5px;
+}
+
+/*Estilo de los títulos. tamaño*/
+h1{font-size: 34px;}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 15px;
+    font-weight: bolder;
+}
+h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+h6{font-size: 15px;}

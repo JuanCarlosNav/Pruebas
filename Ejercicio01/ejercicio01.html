@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>
+            Página de pruebas javascript
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    </head>
+
+    <body onload="cambiatexto()">
+        <script>
+            function cambiatexto() {
+                let estado = document.querySelector('#resultado');
+                resultado.textContent = "Línea de Resultados ";
+                console.log("Ha cambiado la línea de estado");
+            }
+        </script>
+        <div class="formulario1">
+            <h1>Registro de incidencias</h1>
+            <p>Esta es la página de incidencias corporativa. Rellena el formulario para registrar alguna de las 
+                siguientes incidencias</p>
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Incidencias del servicio</li>
+                            <li>Incidencias con clientes</li>
+                            <li>Incidencias con proveedores</li>
+                            <li>Incidencias con empleados</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img id = "miimagen" src="images/sendweb.jpg"/>
+                    </td>
+                </tr>
+            </table>
+            <h2>Registrar Incidencias</h2>
+            <form>
+                <table>
+<!--                    <tr> 
+                        <td colspan="2" class="titulo">Introducir la incidencia</td>
+                    </tr>
+                    <tr><td><br/></td><td><br/></td></tr>
+    -->
+                    <tr>
+                        <td>Tipo de incidencia: 
+                            <select id="seleccion">
+                                <option value="servicio">Servicio</option>
+                                <option value="clientes">clientes</option>
+                                <option value="proveedores">proveedores</option>
+                                <option value="empleados">empleados</option>
+                            </select>
+                        </td>
+                        <td>Texto: <input id="incidencia" type="text" size="35"/></td>
+                    </tr>
+                    <tr><td><br/></td><td><br/></td></tr>
+                    <tr>
+                        <td colspan="2" class="lineabotones"><input id="enviar" type="submit" value="enviar"><input type="reset" value="limpiar"></td>
+                    </tr>
+<!--                    <tr><td><br/></td><td><br/></td></tr>   
+    -->
+                </table>
+            </form>
+            <form>
+                <table class="calculadora">
+                    <tr>
+                        <td colspan="4" class="titulo">Calculadora local</td>
+                    </tr>
+<!--                    <tr><td><br/></td><td><br/></td><td><br/></td><td><br/></td></tr>
+    -->
+                    <tr>
+                        <td colspan="2">Primer Número: <input id="num1" type="text" size="10"/></td>
+                        <td colspan="2">Segundo Número: <input id="num2" type="text" size="10"/></td>
+                    </tr>
+<!--                    <tr><td><br/></td><td><br/></td><td><br/></td><td><br/></td></tr>
+    --->
+                    <tr>
+                        <td><input class="calc" id="sumar" type="button" value="+"></td>
+                        <td><input class="calc" id="restar" type="button" value="-"></td>
+                        <td><input class="calc" id="multiplicar" type="button" value="x"></td>
+                        <td><input class="calc" id="dividir" type="button" value="/"></td>
+                    </tr>
+                    <tr><td><br/></td><td><br/></td><td><br/></td><td><br/></td></tr>
+                    <tr>
+                        <td colspan="4"><input class="calc" id="array" type="button" value="Mostrar Array"></td>
+                    </tr>
+                    <tr><td><br/></td><td><br/></td><td><br/></td><td><br/></td></tr>
+                    <tr>
+                        <td colspan="4" id="resultado" class="datos">DATOS</td>
+                    </tr>
+                    <tr><td><br/></td><td><br/></td><td><br/></td><td><br/></td></tr>
+                    <tr><td colspan="4" class="pie">PIE DE PAGINA</td></tr>
+                </table>
+            </form>
+        </div>
+        <script src = "scripts/testscript.js"></script>
+    </body>
+</html>

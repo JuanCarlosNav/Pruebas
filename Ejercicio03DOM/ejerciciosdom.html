@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>
+            Página de pruebas javascript
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    </head>
+
+    <body>
+        <div>
+            <table class="cabecera">
+                <tr>
+                    <td widht="10%"></td>
+                    <td width="10%"><img class = "milogo" id = "logo" src="images/logo.png"/></td>
+                    <td width="80%" class="cab"><h2>Introduce Información</h2></td>
+                </tr>
+            </table>
+        </div> 
+        <div class="container">
+            <div id='opciones'>     
+                <ul id="menu">
+                    <li><a href="#">1er orden opc01</a></li>
+                    <li><a href="#">1er orden opc02</a>
+                        <ul>
+                            <li><a href="#">2ndo orden opc02.01</a><br/></li>
+                            <li><a href="#">2ndo orden opc02.02</a><br/></li>
+                            <li><a href="#">2ndo orden opc02.03</a><br/></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">1er orden opc03</a>
+                        <ul>
+                            <li><a href="#">2ndo orden opc03.01</a><br/></li>
+                            <li><a href="#">2ndo orden opc03.02</a><br/></li>
+                            <li><a href="#">2ndo orden opc03.03</a><br/></li>
+                            <li><a href="#">2ndo orden opc03.04</a>
+                                <ul>
+                                    <li><a href="#">3er orden opc03.04.01</a><br/></li>
+                                    <li><a href="#">3er orden opc03.04.02</a><br/></li>
+                                    <li><a href="#">3er orden opc03.04.03</a><br/></li>
+                                    <li><a href="#">3er orden opc03.04.04</a><br/></li>
+                                </ul>
+                                <br/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">1er orden opc04</a>
+                        <ul>
+                            <li><a href="#">2ndo orden opc04.01</a><br/></li>
+                            <li><a href="#">2ndo orden opc04.02</a><br/></li>
+                            <li><a href="#">2ndo orden opc04.03</a><br/></li>
+                            <li><a href="#">2ndo orden opc04.04</a><br/></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">1er orden opc05</a>
+                        <ul>
+                            <li><a href="#">2ndo orden opc05.01</a><br/></li>
+                            <li><a href="#">2ndo orden opc05.01</a><br/></li>
+                            <li><a href="#">2ndo orden opc05.01</a><br/></li>
+                            <li><a href="#">2ndo orden opc05.01</a><br/></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">1er orden opc06</a></li>
+                </ul>
+            </div>
+            <br/><br/><br/>
+            <div id="form1" class="formulario1" >
+                <form name="FormDatos" method="post" action="">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="etiqueta">D.N.I: <input class="txtentrada" id="dni" type="text" size="10"/></td>
+                                <td class="etiqueta">Nombre: <input class = "txtentrada" id="nombre" type="text" size="35"/></td>
+                            <td></td>
+                            </tr>
+                            <tr>
+                                <td class="txtsubtitulo" span = "2">Dirección</td>
+                            </tr>
+                            <tr>
+                                <td class="etiqueta">Calle: <input class="txtentrada" id="calle" type="text" size="35"/></td>
+                                <td class="etiqueta">Número: <input class="txtentrada" id="numero" type="text" size="10"/></td>
+                            </tr>
+                            <tr>
+                                <td class="etiqueta">Municipio: <input class="txtentrada" id="mun" type="text" size="35"/></td>
+                                <td class="etiqueta">Provincia: <input class="txtentrada" id="prov" type="text" size="35"/></td>
+                            </tr>
+                            <tr>
+                                <td class="etiqueta">Código postal: <input class="txtentrada" id="cpostal" type="text" size="10"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="lineabotones"><input id="enviar" type="submit" value="enviar"><input type="reset" value="limpiar"></td>
+                            </tr>
+                            <tr colspan = "2"><td><br/></td></tr>
+                            <tr colspan = "2"><td id = "estado" class="lineaestado"></td></tr>
+                        </tbody>
+                    </table>
+                </form> 
+            </div>
+
+            <div class="formulario1">
+                <h2>Temporizador</h2>
+                <form id="formTemporizador">
+                    Min: <input type="number" name="min" id="formMin"> <br />
+                    Seg: <input type="number" name="seg" id="formSeg"> <br />
+                    <input type="submit">
+                </form>
+                               
+                <div id="temporizador">
+                    <span id="min">_</span>:<span id="seg">_</span>
+                </div>
+                <br />
+            </div>
+
+            <div class="formulario1">
+                <input type="text" id="texto" />
+                <button onclick="anyadirFila()">Añadir fila</button>
+
+                <br />
+
+                <table>
+                    <thead>
+                        <tr><th>Contenido</th><th>Operación</th></tr>
+                    </thead>
+                    <tbody id="bodyTabla">
+                        <tr>
+                            <td id="fila1">Ejemplo de Contenido</td>
+                            <td><button onclick="toCani('fila1')">Caniar</button></td>
+                        </tr>
+                    </tbody>
+                        </tr>
+                </table>
+            </div>
+
+            <div class="formulario1">
+                <img class = "milogo" id = "imagen" src="img/hoja.jpg"/>
+            </div>
+
+            <div class="pie">
+                <table>
+                    <tr>
+                        <td class="pie">Pie de pagina</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <script src = "scripts/scripts.js"></script>
+    </body>
+</html>
