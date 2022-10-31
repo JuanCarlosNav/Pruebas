@@ -1,5 +1,5 @@
 //Ejercicios básicos Javascript
-// suma dos números
+// suma dos números pasados como parámetro
 function suma (numero1,numero2) {
     let resultado = numero1 + numero2;
     return resultado;

@@ -14,10 +14,6 @@ body{
 html {
   height: 100%;
 }
-.milogo {
-  width: 52px;
-  height: 52px;
-}
 
 /*Cabecera de página*/
 .cabecera {
@@ -34,10 +30,6 @@ html {
     font-weight: bold;  
   }
 
-/*Línea de botones*/
-.lineabotones{
-  text-align: center;
-}
 /*Línea de estado*/
 .lineaestado{
   text-align: center;
@@ -51,14 +43,6 @@ html {
   font-weight: bold;
   color:#fff;
 }
-/*
-.txtpie {
-  text-align: center;
-  font-weight: bold;
-  background-color: darkslategrey;
-  color:#fff;
-}
-*/
 
 /*Contenedor (en general) */
 .container {
@@ -73,17 +57,9 @@ html {
 .formulario1 {
   z-index: 3;
 
-/*  position:absolute; 
-  top: 90;
-  left: 40px;
-  right: 50px; */
-
   visibility: visible;
   margin: 0 auto;
   width: auto;
-/*  width: 800px;*/
-/*  height:400px;*/
-}
 
 .etiqueta {
   color: #000099;
@@ -100,204 +76,3 @@ html {
   font-weight: bolder;
 }
 
-/*Posición del menú*/
-#opciones { 
-  z-index: 4;
-/*  position: absolute; */
-/*  position: relative; */
-/*  top: 50px; */
-  left: 0px;
-  right: 0px;
-  margin: 0 auto; 
-  width: auto; 
-/*  width: 100vw; */
-  height: 23px;
-  visibility: visible;
-}
-
-/*Menú de opciones*/
-/* Root = Horizontal, Secundario = Vertical */
-ul#menu {
-/*	margin: 0;*/
-  margin: 0;
-  border: 0 none;
-  padding: 0;
-/*  width: 500px;360*/ /*For KHTML*/
-/*  width:532px;*/
-  width: auto; 
-/*  width: 1000px;*/
-  list-style: none;
-  height: 20px;
-/*color #eee: color gris más o menos claro*/  
-  border:1px solid #eee;
-  background:#ddd;
-  padding-bottom:5px;
-}
-
-ul#menu li {
-  margin: 0;
-  border: 0 none;
-  padding: 0;
-  float: left; /*For Gecko*/
-  display: inline;
-  list-style: none;
-  position: relative;
-  height: 20px;
-}
-ul#menu li{
-	padding-bottom:5px;
-}
-ul#menu li:hover{
-/*color #ddd: gris algo menos claro que el #eee. Notese que es para el fondo*/
-	background:#ddd;
-}
-
-ul#menu  ul {
-  margin: 0;
-  border: 0 none;
-  padding: 0;
-  width: 165px;
-  list-style: none;
-  display: none;
-  position: absolute;
-  top: 25px;
-  left: 10px;
-/*color #eee: color gris más o menos claro. Fondo*/  
-  background: #eee;
-  border: none;
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  filter:alpha(opacity=80);
-}
-
-ul#menu ul:after /*From IE 7 lack of compliance*/{
-  clear: both;
-  display: block;
-  font: 1px/0px serif;
-  content: ".";
-  height: 0;
-  visibility: hidden;
-}
-
-ul#menu ul li {
-  width: 165px;
-  float: left; /*For IE 7 lack of compliance*/
-  display: block !important;
-  display: inline; /*For IE*/
-}
-
-/* Root Menu */
-ul#menu a {
-  padding: 5px 15px 5px;
-  float: none !important; /*For Opera*/
-  float: left; /*For IE*/
-  display: block;
-/*color #9fcf21: color verde pistacho (más o menos)*/  
-/*  color: #cc0033;*/
-  color: #cc0033;
-  background: #ddd;
-  text-decoration: none;
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:12px;
-  font-weight:bold;
-/*  border-right:1px solid #818181;*/
-  text-decoration: none;
-  height: auto !important;
-  height: 1%; /*For IE*/
-}
-
-/* Root Menu Hover Persistencia */
-ul#menu a:hover,
-ul#menu li:hover a,
-ul#menu li.iehover a {
-  /*color: #003300: color verdoso oscuro*/
-  color: #440000;
-}
-
-/* 2nd Menu */
-ul#menu li:hover li a,
-ul#menu li.iehover li a {
-  float: none;
-  border:none;
-}
-
-/* 2nd Menu Hover Persistencia */
-ul#menu li:hover li a:hover,
-ul#menu li:hover li:hover a,
-ul#menu li.iehover li a:hover,
-ul#menu li.iehover li.iehover a {
-  /*color #ddd: gris algo menos claro que el #eee. Notese que es para el fondo*/
-  background:#bbb;
-  /*color: #003300: color verdoso oscuro*/
-  /*	color: #440000;*/ 
-	color: #990000;
-}
-
-/* 3rd Menu */
-ul#menu li:hover li:hover li a,
-ul#menu li.iehover li.iehover li a {
-  /*color #EEE es gris casi blanco*/
-  background: #EEE;
-  /*color #666 es un gris tirando ya a algo oscuro*/  
-  color: #440000;
-}
-
-/* 3rd Menu Hover Persistencia */
-
-ul#menu li:hover li:hover li a:hover,
-ul#menu li:hover li:hover li:hover a,
-ul#menu li.iehover li.iehover li a:hover,
-ul#menu li.iehover li.iehover li.iehover a {
-  /*color #ddd: gris algo menos claro que el #eee. Notese que es para el fondo*/
-  background:#bbb;
-  /*color #fff: color blanco*/
-  color: #990000;
-}
-
-/* 4th Menu */
-ul#menu li:hover li:hover li:hover li a,
-ul#menu li.iehover li.iehover li.iehover li a {
-  /*color #ddd: gris algo menos claro que el #eee. Notese que es para el fondo*/
-  background:#ddd;
-  /*color #666 es un gris tirando ya a algo oscuro*/
-  color: #990000;
-}
-
-/* 4th Menu Hover */
-ul#menu li:hover li:hover li:hover li a:hover,
-ul#menu li.iehover li.iehover li.iehover li a:hover {
-  /*color #CCC es un gris tirando ya a blanco*/
-  background: #bbb;
-  color: #990000;
-}
-
-ul#menu ul ul,
-ul#menu ul ul ul {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 165px;
-}
-
-/* No mover - debe venir antes de display:block para Gecko */
-ul#menu li:hover ul ul,
-ul#menu li:hover ul ul ul,
-ul#menu li.iehover ul ul,
-ul#menu li.iehover ul ul ul {
-  display: none;
-}
-
-ul#menu li:hover ul,
-ul#menu ul li:hover ul,
-ul#menu ul ul li:hover ul,
-ul#menu li.iehover ul,
-ul#menu ul li.iehover ul,
-ul#menu ul ul li.iehover ul {
-  display: block;
-}
-ul#menu .selected{
-  /*color: #003300: color verdoso oscuro*/ 
-  /*	color: #440000;*/
-	color: #440000;
-}
