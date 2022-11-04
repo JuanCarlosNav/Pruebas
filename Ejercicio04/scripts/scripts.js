@@ -101,11 +101,16 @@ var Canificador = (function () {
             //Genero una expresion regular basada en el último final asignado
             let varFiltro = new RegExp( endString + "$");
 
-            result = string.replace(/k/ig,"c");
             //Añado las ku, pero hay que tener en cuenta que puede haber alguna
             //palabra válida que tenga ku (kung-fu, kurdo, kuwaití, arresku ...)
             //es por lo mismo que no se sustituye la x por ch.
-            result = result.replace(/ku/ig,"qu");
+//            result = string.replace(/ku/ig,"qu");
+ //           result = string.replace(/ke/ig,"que");
+//            result = result.replace(/ki/ig,"qui");
+//            result = result.replace(/que/ig,"que");
+
+
+            result = string.replace(/k/ig,"c");
             result = result.replace(varFiltro,"");
             result = result.toLowerCase();
 
