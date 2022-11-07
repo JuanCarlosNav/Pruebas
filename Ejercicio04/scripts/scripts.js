@@ -36,7 +36,7 @@ Total: <div id="total"></div>
 ///////////////////////////////////////////////////////
 //*////////////////////////////////////////////////////
 console.log("====================================================================");
-console.log("Ejercicio 1. Modulo con 3 metodos");
+console.log("Ejercicio 1. Modulo con 3 metodos. Prueas QUnit");
 console.log("====================================================================");
 // Función que efectúa una modificación sobre un strig que recibe como parámetro.
 // El resultado es el mismo String pero sus caracteres van alternando entre mayúsculas
@@ -203,5 +203,19 @@ btnDesCaniar.onclick = function(){
     }
 };
 
+
+console.log("====================================================================");
+
+///////////////////////////////////////////////////////
+///// PRUEBAS DE FUNCIONAMIENTO DE LAS FUNCIONES //////
+/*////////////////////////////////////////////////////
+Haciendo uso de LightBox (http://lokeshdhakar.com/projects/lightbox2/), 
+implementa un carrusel de fotos.
+///////////////////////////////////////////////////////
+//*////////////////////////////////////////////////////
+
+console.log("====================================================================");
+console.log("Ejercicio 2. Incluir librerias de terceros. Pruebas ligthbox");
+console.log("====================================================================");
 
 console.log("====================================================================");

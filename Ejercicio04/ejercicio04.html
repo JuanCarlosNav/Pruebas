@@ -7,6 +7,8 @@
         </title>
 
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="styles/lightbox.css" />
+
     </head>
 
     <body>
@@ -38,6 +40,58 @@
                 <p> </p>
             </div>
 
+            <div id="imagenes" class="imagenes">              
+                <div class="column">
+                    <a class="enlaceimagen" href="images/agua.jpg" data-lightbox="image-1" data-title="agua">
+                        <img class="imagenreducida" src="images/agua.jpg" alt="" />
+                    </a>
+                </div>
+            
+                <div class="column">
+                    <a class="enlaceimagen" href="images/hierba.jpg" data-lightbox="image-2" data-title="hierba">
+                        <img class="imagenreducida" src="images/hierba.jpg" alt="" />
+                    </a>
+                </div>
+            
+                <div class="column">
+                    <a class="enlaceimagen" href="images/hoja.jpg" data-lightbox="image-3" data-title="hoja">
+                        <img class="imagenreducida" src="images/hoja.jpg" alt="" />
+                    </a>
+                </div>
+            
+                <div class="column">
+                    <a class="enlaceimagen" href="images/primavera.jpg" data-lightbox="image-4" data-title="primavera">
+                        <img class="imagenreducida" src="images/primavera.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div id="carrusel" class="imagenes">              
+                <div class="column">
+                    <a class="enlaceimagen" href="images/borderlands2.jpeg" data-lightbox="setdeimagenes" data-title="Click en la mitad derecha de la imagen para avanzar.">
+                        <img class="imagenreducida" src="images/borderlands2.jpeg" alt="" />
+                    </a>
+                </div>
+            
+                <div class="column">
+                    <a class="enlaceimagen" href="images/darksouls3.jpeg" data-lightbox="setdeimagenes" data-title="O pulsa la flecha de la derecha del teclado.">
+                        <img class="imagenreducida" src="images/darksouls3.jpeg" alt="" />
+                    </a>
+                </div>
+            
+                <div class="column">
+                    <a class="enlaceimagen" href="images/thedivision2.jpeg" data-lightbox="setdeimagenes" data-title="La siguiente imagen del conjunto se precarga mientras estás viendo la actual.">
+                        <img class="imagenreducida" src="images/thedivision2.jpeg" alt="" />
+                    </a>
+                </div>
+            
+                <div class="column">
+                    <a class="enlaceimagen" href="images/eldenring.jpeg" data-lightbox="setdeimagenes" data-title="Pulsa en cualquier parte fuera de la imagen o en la X de la derecha para cerrar la imagen.">
+                        <img class="imagenreducida" src="images/eldenring.jpeg" alt="" />
+                    </a>
+                </div>
+            </div>
+
             <div class="pie">
                 <table>
                     <tr>
@@ -47,6 +101,7 @@
             </div>
 
         </div>
+        <script src = "scripts/lightbox-plus-jquery.js"></script>
         <script src = "scripts/scripts.js"></script>
     </body>
 </html>
