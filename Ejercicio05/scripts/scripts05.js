@@ -58,11 +58,12 @@ function recorreJSONorg(obj) {
 //Esta función tampoco se utiliza. contiene la mejora de que 
 //obtiene el valor de la clave qeu se pasa como parámetro.
 //Si el objeto tiene Hijos sólo recorre aquellos que se pasa
-//en el parámetro comp.
+//en el parámetro comp (compuesto).
 //Recorre el JSON que se pasa como parámetro. Si se añada una
 //clave, obtiene sólo el dato de esa clave.
-//Si se añade un comp, obtiene todos los hijos de la clave
-//que se recibe. Hay que declarar la variable global filtro.
+//Si se añade un parametro comp (compuesto), obtiene todos los 
+//hijos de la clave que se recibe. Hay que declarar la 
+//variable global filtro.
 let filtro;
 function recorreJSON(obj,clave,comp) {
     for (var property in obj) {
