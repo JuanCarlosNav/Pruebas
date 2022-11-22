@@ -1,0 +1,79 @@
+
+
+/*Títulos: Color azul.*/
+H1 {font-family: Arial, Helvetica, sans-serif; color: #000099;}
+H2 {font-family: Arial, Helvetica, sans-serif; color: #000099;}
+H3 {font-family: Arial, Helvetica, sans-serif; color: #000099;}
+H4 {font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #000099;}
+
+body{
+/*Color Blanco: #fff-fondo blanco*/
+	background:#fff;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+
+/*Cabecera de página*/
+.cabecera {
+/*  width:100vw; */
+/*  text-align: center;*/
+  vertical-align:middle;  
+
+}
+.cab {
+  /*  width:100vw; */
+  /*  text-align: center;*/
+    text-align:center;
+    vertical-align:middle;
+    font-weight: bold;  
+  }
+
+/*Línea de estado*/
+.lineaestado{
+  text-align: center;
+}
+
+/*Pie de página*/
+.pie {
+  width:100vw;
+  text-align: center;
+  background-color: darkslategrey;
+  font-weight: bold;
+  color:#fff;
+}
+
+/*Contenedor (en general) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Formulario */
+.formulario1 {
+  z-index: 3;
+
+  visibility: visible;
+  margin: 0 auto;
+  width: auto;
+}
+
+.etiqueta {
+  color: #000099;
+}
+
+.txtentrada {
+  color:purple;
+  background-color:lightpink;
+}
+
+.txtsubtitulo {
+  color: #000099;
+  font-size: medium;
+  font-weight: bolder;
+}
+
