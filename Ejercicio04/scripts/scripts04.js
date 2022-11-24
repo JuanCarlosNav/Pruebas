@@ -147,6 +147,7 @@ var btnCaniar=document.getElementById('caniar');
 var resultado = document.getElementById('resultado');
 var total = document.getElementById('total');
 btnCaniar.onclick = function(){ 
+    texto = textArea.value;
     let textoResult = Canificador.toCani({"texto": texto, "final":"ARGH"});
     let result = document.getElementById("result");
     let contador = document.getElementById("contador");

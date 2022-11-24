@@ -80,11 +80,11 @@ miImage.onclick = function(){
 //    let miImagen = miImage.getAttribute('name');
 //    if (miSrc === "images/sendweb.jpg" && miImagen === "miimagen") {
     if (miSrc === "images/sendweb.jpg") {
-        miImage.setAttribute('src','images/incidenciasweb.jpg');
+        this.setAttribute('src','images/incidenciasweb.jpg');
         console.log("Nuevo atributo: images/incidenciasweb.jpg");
     } else {
-        miImage.setAttribute('src',"images/sendweb.jpg");
-        console.log("Nuevo atributo: images/sendweb.jpg");
+        this.setAttribute('src',"images/sendweb.jpg");
+        console.log("Nuevo atributo: images/sendweg.jpg");
     }
 //    location.reload();
 }
